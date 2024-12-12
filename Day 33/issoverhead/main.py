@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import smtplib
 import time
-from creds import EMAIL, PASSWORD
+from config import EMAIL, PASSWORD
 
 MY_LAT = 43.653225    # Your latitude
 MY_LONG = -79.383186   # Your longitude
