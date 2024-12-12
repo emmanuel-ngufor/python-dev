@@ -1,2 +1,6 @@
 .venv
 .env
+.creds
+creds
+creds.py
+__pycache
