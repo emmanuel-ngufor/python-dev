@@ -1,4 +1,11 @@
+import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
+
+API_KEY =  os.environ.get("api_key")
+print(API_KEY)
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
@@ -14,7 +21,7 @@ stock_parameters = {
     "function": "TIME_SERIES_INTRADAY",
     "symbol": STOCK_NAME,
     "interval": "5min",
-    "apikey": "GFTZWIIWLCD9D8YU"
+    "apikey": API_KEY
     }
 response = requests.get(url=STOCK_ENDPOINT, params=stock_parameters)
 response.raise_for_status()
