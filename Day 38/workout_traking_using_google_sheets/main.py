@@ -7,6 +7,7 @@ load_dotenv()  # take environment variables from .env.
 APP_ID =  os.environ.get("nutritionix_app_id")
 API_KEY = os.environ.get("nutritionix_api_key")
 
+
 natural_lang_for_exercise_url = "https://trackapi.nutritionix.com/v2/natural/exercise"
 
 
