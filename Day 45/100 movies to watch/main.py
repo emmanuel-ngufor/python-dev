@@ -20,4 +20,7 @@ for title in movie_titles:
     print(title)
 
 
-
+# Generating a .txt file of all 100 movies
+with open("movies.txt", "w", encoding="utf-8") as file:
+    for title in movie_titles:
+        file.write(f"{title}.\n")
