@@ -1,0 +1,24 @@
+import requests
+from bs4 import BeautifulSoup
+
+URL = "https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/"
+
+# Write your code below this line 👇
+
+
+
+response = requests.get(URL)
+movie_web_page = response.text
+soup = BeautifulSoup(movie_web_page, "html.parser")
+movies_html_doc = soup.find_all(name = "h3", class_ = "title")
+
+movie_titles = []
+for movie in movies_html_doc:
+    movie_titles.append(movie.get_text())
+
+movie_titles.reverse()
+for title in movie_titles:
+    print(title)
+
+
+
