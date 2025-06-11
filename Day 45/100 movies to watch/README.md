@@ -26,4 +26,4 @@ from the Internet Archive's Wayback machine. That way your work will match the s
 
 # Solution
 
-You can find the code from my walkthrough and solution as a downloadable .zip file in the course resources for this lesson. 
+You can find the solution code in main.py. 
